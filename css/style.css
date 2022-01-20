@@ -34,10 +34,28 @@ header {
 
 /* fin header */
 /* inicio de main top */
+.box-color1 {
+  background-color: #004d6e;
+  box-shadow: 5px 5px 5px #000;
+  border-radius: 25px;
+}
+
+.box-color2 {
+  background-color: #4686ab;
+  box-shadow: 5px 5px 5px #000;
+  border-radius: 25px;
+}
+
+.box-color3 {
+  background-color: #7ec5ec;
+  box-shadow: 5px 5px 5px #000;
+  border-radius: 25px;
+}
+
 .main__top {
   border: 2px solid rgba(41, 41, 41, 0.5);
   padding: 20px;
-  margin-left: 15px;
+  margin: 15px;
   box-shadow: 5px 5px 5px #292929;
   background-color: #bee2f6;
   border-radius: 15px;
@@ -50,12 +68,8 @@ header {
 }
 
 .main__section {
-  background-color: #004d6e;
-  box-shadow: 5px 5px 5px #000;
-  border-radius: 25px;
   line-height: 45px;
 }
-
 .main__section p {
   color: white;
   text-shadow: 5px 5px 5px #000;
@@ -63,12 +77,8 @@ header {
 }
 
 .main__section2 {
-  background-color: #4686ab;
-  border-radius: 25px;
-  box-shadow: 5px 5px 5px #000;
   line-height: 35px;
 }
-
 .main__section2 p {
   color: white;
   font-family: "Spartan", sans-serif;
@@ -76,12 +86,8 @@ header {
 }
 
 .main__section3 {
-  background-color: #7ec5ec;
-  border-radius: 25px;
-  box-shadow: 5px 5px 5px #000;
   line-height: 30px;
 }
-
 .main__section3 p {
   text-shadow: 5px 5px 5px #000;
   color: white;
@@ -91,21 +97,17 @@ header {
 /* fin de main top */
 /* inicio de main mid */
 .main__mid {
-  background-color: #bee2f6;
-  height: 900px;
-  padding: 15px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 35fr 30fr 30fr 30fr;
-  grid-template-areas: "midtitle midtitle midtitle" "hotel1 hotel1 hotel2" "hotel3 hotel4 hotel5" "hotel6 hotel7 hotel7" "hotel8 hotel8 hotel9";
-  grid-gap: 15px;
-  margin: 15px;
   border-radius: 25px;
   box-shadow: 5px 5px 5px #000;
 }
 
+.main__mid {
+  padding: 15px;
+  margin: 15px;
+  background-color: #bee2f6;
+}
+
 .main__mid__title {
-  grid-area: midtitle;
   font-size: 40px;
   text-align: center;
   color: #004d6e;
@@ -113,175 +115,65 @@ header {
   text-shadow: 1px 7px 7px #000;
 }
 
-.hotel1 {
-  grid-area: hotel1;
-  background-image: url(../Img/hotelBrasil.jpg);
-  background-position: center;
-  background-size: cover;
-  box-shadow: 5px 5px 5px #000;
+.main__mid--text {
   display: flex;
-  align-items: flex-end;
-  font-family: "Spartan", sans-serif;
-  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: end;
 }
 
 .main__mid--font {
   background-image: linear-gradient(rgba(0, 0, 0, 0), black);
   width: 100%;
   border-radius: 10px;
-  margin-bottom: -5px;
-  font-size: 30px;
   text-align: center;
   color: white;
 }
 
-.hotel2 {
-  grid-area: hotel2;
-  background-image: url(../Img/hotelBuenosAires.jpg);
-  background-position: center;
-  background-size: cover;
-  box-shadow: 5px 5px 5px #000;
-  display: flex;
-  align-items: flex-end;
-  font-family: "Spartan", sans-serif;
+.sizeimg, .hotel9, .hotel8, .hotel7, .hotel6, .hotel5, .hotel4, .hotel3, .hotel2, .hotel1 {
   border-radius: 10px;
+  height: 150px;
+  font-family: "Spartan", sans-serif;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.hotel1 {
+  background-image: url(../Img/hotelBrasil.jpg);
+}
+
+.hotel2 {
+  background-image: url(../Img/hotelBuenosAires.jpg);
 }
 
 .hotel3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), black);
-  width: 100%;
-  grid-area: hotel3;
   background-image: url(../Img/hotelCancun.jpg);
-  background-position: center;
-  background-size: cover;
-  box-shadow: 5px 5px 5px #000;
-  display: flex;
-  align-items: flex-end;
-  font-family: "Spartan", sans-serif;
-  border-radius: 10px;
 }
 
 .hotel4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), black);
-  width: 100%;
-  grid-area: hotel4;
   background-image: url(../Img/hotelParis.jpg);
-  background-position: center;
-  background-size: cover;
-  box-shadow: 5px 5px 5px #000;
-  display: flex;
-  align-items: flex-end;
-  font-family: "Spartan", sans-serif;
-  border-radius: 10px;
 }
 
 .hotel5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), black);
-  width: 100%;
-  grid-area: hotel5;
   background-image: url(../Img/hotelMadrid.jpg);
-  background-position: center;
-  background-size: cover;
-  box-shadow: 5px 5px 5px #000;
-  display: flex;
-  align-items: flex-end;
-  font-family: "Spartan", sans-serif;
-  border-radius: 10px;
 }
 
 .hotel6 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), black);
-  width: 100%;
-  grid-area: hotel6;
   background-image: url(../Img/hotelAmsterdam.jpg);
-  background-position: center;
-  background-size: cover;
-  box-shadow: 5px 5px 5px #000;
-  display: flex;
-  align-items: flex-end;
-  font-family: "Spartan", sans-serif;
-  border-radius: 10px;
 }
 
 .hotel7 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), black);
-  width: 100%;
-  grid-area: hotel7;
   background-image: url(../Img/hotelLondres.jpg);
-  background-position: center;
-  background-size: cover;
-  box-shadow: 5px 5px 5px #000;
-  display: flex;
-  align-items: flex-end;
-  font-family: "Spartan", sans-serif;
-  border-radius: 10px;
 }
 
 .hotel8 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), black);
-  width: 100%;
-  grid-area: hotel8;
   background-image: url(../Img/hotelToronto.jpg);
-  background-position: center;
-  background-size: cover;
-  box-shadow: 5px 5px 5px #000;
-  display: flex;
-  align-items: flex-end;
-  border-radius: 10px;
-  font-family: "Spartan", sans-serif;
 }
 
 .hotel9 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), black);
-  width: 100%;
-  grid-area: hotel9;
   background-image: url(../Img/hotelBerlin.jpg);
-  background-position: center;
-  background-size: cover;
-  box-shadow: 5px 5px 5px #000;
-  display: flex;
-  align-items: flex-end;
-  font-family: "Spartan", sans-serif;
-  border-radius: 10px;
 }
 
 /* fin de main mid */
-@media only screen and (min-width: 400px) and (max-width: 599px) {
-  .main__top {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 3fr 3fr;
-    grid-template-areas: "title" "box1" "box2" "box3";
-    grid-gap: 10px;
-  }
-
-  .main__mid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr;
-    grid-template-areas: "midtitle" "hotel1" "hotel2" "hotel3" "hotel4" "hotel5" "hotel6" "hotel7" "hotel8" "hotel9";
-    grid-gap: 15px;
-    height: 1700px;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 799px) {
-  .main__top {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "title title" "box1 box2" "box3 box3";
-    grid-gap: 10px;
-  }
-
-  .main__mid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 30fr 30fr 30fr 30fr 30fr;
-    grid-template-areas: "midtitle midtitle midtitle" "hotel1 hotel1 hotel2" "hotel3 hotel4 hotel4" "hotel5 hotel5 hotel6" "hotel7 hotel7 hotel7" "hotel8 hotel8 hotel9";
-    grid-gap: 15px;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
