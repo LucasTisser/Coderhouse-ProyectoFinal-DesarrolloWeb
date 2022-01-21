@@ -30,8 +30,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Navbar links and Search -->
-            <div class="collapse navbar-collapse nav-space" id="collapsibleNavbar">
-                <ul class="navbar-nav col-7 ml-md-5 ml-lg-5 ml-xl-5 container-lg">
+            <div class="collapse navbar-collapse nav-space row" id="collapsibleNavbar">
+                <ul class="navbar-nav col-7 col-lg-5 col-xl-5 ml-md-1 ml-lg-5">
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#">Home</a>
                     </li>
@@ -48,7 +48,7 @@
                         <a class="nav-link text-light" href="#">Contacto</a>
                     </li>
                 </ul>
-                <form class="form-inline" action="/action_page.php">
+                <form class="form-inline offset-xl-3 col-xl-3" action="/action_page.php">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search">
                     <button class="btn btn-success" type="submit">Search</button>
                 </form>
@@ -76,73 +76,81 @@
     <main class="container col-12 col-sm-12 col-md-12 col-lg-12">
 
         <!-- inicio de main Top -->
-        <div>
-            <div class="row">
-                <div class="main__top col-md-8 col-lg-8">
-                    <div class="text-center">
-                        <h1 class="main__title">Aprovecha las Promociones!</h1> <br>
-                    </div>
-                    <div class="row">
-                        <section data-aos="zoom-in" class="main__section box-color1 col-lg-3 m-4">
-                            <p>
-                                Tu hospedaje cuenta con servicio de desayuno y cena incluido sin cargo.
-                            </p>
-                        </section>
-                        <section data-aos="zoom-in" class="main__section3 box-color2 col-lg-3 m-4">
-                            <p>
-                                Si el hospedaje es de 2 adultos y 2 niños, obtenes un 10% de descuento por cada dia que
-                                te
-                                hospedes con nosotros.
-                            </p>
-                        </section>
-                        <section data-aos="zoom-in" class="main__section2 box-color3 col-lg-3 m-4">
-                            <p>
-                                Abonando en efectivo, se otorgara un descuento del 20% en el total de tu hospedaje.
-                            </p>
-                        </section>
-                    </div>
+        <div class="row">
+            <div class="main__top mt-4 ml-4 p-3 col-11 col-sm-11 col-md-7 col-lg-8">
+                <div class="text-center">
+                    <h1 class="main__title text-center">Aprovecha las Promociones!</h1> <br>
+                </div>
+                <div class="row">
+                    <section data-aos="zoom-in" class="main__section box-color1 col-lg-3 col-xl-3 m-4 ml-lg-2 ml-xl-1">
+                        <p>
+                            Tu hospedaje cuenta con servicio de desayuno y cena incluido sin cargo.
+                        </p>
+                    </section>
+                    <section data-aos="zoom-in" class="main__section3 box-color2 col-lg-3 col-xl-4 m-4 ml-lg-3 ml-xl-1">
+                        <p>
+                            Si el hospedaje es de 2 adultos y 2 niños, obtenes un 10% de descuento por cada dia que te
+                            hospedes con nosotros.
+                        </p>
+                    </section>
+                    <section data-aos="zoom-in" class="main__section2 box-color3 col-lg-3 col-xl-4 m-4 ml-lg-1 ml-xl-1">
+                        <p>
+                            Abonando en efectivo, se otorgara un descuento del 20% en el total de tu hospedaje.
+                        </p>
+                    </section>
                 </div>
             </div>
+
+            <!-- <aside class="col-md-4 m-md-4 bg-dark">
+                <div class="box">item</div>
+                <div class="box">item</div>
+            </aside> -->
+
         </div>
+
         <!-- fin de main Top-->
 
 
         <!-- inicio de main mid-->
-        <div class="container text-center">
-            <div class="row">
-                <div class="main__mid col-md-12">
-                    <h2 class="main__mid__title">Nuestros hoteles mas importantes</h2>
-                    <div class="row">
-                        <div data-aos="zoom-in-left" class="hotel1 mb-4  col-10 col-sm-5 offset-1">
-                            <p class="main__mid--font">Rio de Janeiro, Brasil</p>
-                        </div>
-                        <div data-aos="zoom-in-left" class="hotel2 mb-4 col-10 col-sm-4 offset-1">
-                            <p class="main__mid--font">Buenos Aires,Argentina</p>
-                        </div>
-                        <div data-aos="zoom-in-left" class="hotel3 mb-4 col-10 col-sm-10 offset-1">
-                            <p class="main__mid--font">Cancun, Mexico</p>
-                        </div>
-                        <div data-aos="zoom-in-left" class="hotel4 mb-4 col-10 col-sm-4 offset-1">
-                            <p class="main__mid--font">Paris, Francia</p>
-                        </div>
-                        <div data-aos="zoom-in-left" class="hotel5 mb-4 col-10 col-sm-5 offset-1">
-                            <p class="main__mid--font">Madrid, España</p>
-                        </div>
-                        <div data-aos="zoom-in-left" class="hotel6 mb-4 col-10 col-sm-10 offset-1">
-                            <p class="main__mid--font">Amsterdam, Holanda</p>
-                        </div>
-                        <div data-aos="zoom-in-left" class="hotel7 mb-4 col-10 col-sm-5 offset-1">
-                            <p class="main__mid--font">Londres, Inglaterra</p>
-                        </div>
-                        <div data-aos="zoom-in-left" class="hotel8 mb-4 col-10 col-sm-4 offset-1">
-                            <p class="main__mid--font">Toronto, Canada</p>
-                        </div>
-                        <div data-aos="zoom-in-left" class="hotel9 mb-4 col-10 col-sm-10 offset-1">
-                            <p class="main__mid--font">Berlin, alemania</p>
-                        </div>
+        <div class="row">
+            <div class="main__mid mt-4 ml-4 col-11 col-sm-11 col-md-7 col-lg-8">
+
+                <h2 class="main__mid__title">Nuestros hoteles mas importantes</h2>
+
+                <div class="row">
+                    <div data-aos="zoom-in-left" class="hotel1 offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4 col-xl-5 mt-5 ml-sm-4">                                  
+                        <p class="main__mid--font hotel1Texto col-sm-12">Rio de Janeiro, Brasil</p>
+                    </div>
+                    <div data-aos="zoom-in-left" class="hotel2 offset-1 offset-sm-0 col-10 col-sm-4 col-lg-7 col-xl-3 mt-5 ml-sm-4">
+                        <p class="main__mid--font hotel2Texto">Buenos Aires,Argentina</p>
+                    </div>
+                    <div data-aos="zoom-in-left" class="hotel3 offset-1 offset-sm-2 col-10 col-sm-8 col-lg-7 col-xl-3 offset-lg-0 mt-5 ml-lg-4">
+                        <p class="main__mid--font ">Cancun, Mexico</p>
+                    </div>
+                    <div data-aos="zoom-in-left" class="hotel4 offset-1 offset-sm-0 col-10 col-sm-4 col-lg-4 col-xl-3 mt-5 ml-sm-4">
+                        <p class="main__mid--font">Paris, Francia</p>
+                    </div>
+                    <div data-aos="zoom-in-left" class="hotel5 offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4 col-xl-3 mt-5 ml-sm-4">
+                        <p class="main__mid--font">Madrid, España</p>
+                    </div>
+                    <div data-aos="zoom-in-left" class="hotel6 offset-1 offset-sm-2 col-10 col-sm-8 col-lg-7 col-xl-5 offset-lg-0 mt-5 ml-lg-4">
+                        <p class="main__mid--font">Amsterdam, Holanda</p>
+                    </div>
+                    <div data-aos="zoom-in-left" class="hotel7 offset-1 offset-sm-0 col-10 col-sm-6 col-lg-7 col-xl-5 mt-5 ml-sm-4">
+                        <p class="main__mid--font">Londres, Inglaterra</p>
+                    </div>
+                    <div data-aos="zoom-in-left" class="hotel8 offset-1 offset-sm-0 col-10 col-sm-4 col-lg-4 col-xl-3 mt-5 ml-sm-4">
+                        <p class="main__mid--font">Toronto, Canada</p>
+                    </div>
+                    <div data-aos="zoom-in-left" class="hotel9 offset-1 offset-sm-2 col-10 col-sm-8 col-lg-10 col-xl-3 offset-lg-1 offset-xl-0 mt-5 ml-xl-4">
+                        <p class="main__mid--font">Berlin, alemania</p>
                     </div>
                 </div>
             </div>
+            <!-- <aside class="col-md-4 m-md-4 bg-dark">
+                <div class="box">item</div>
+                <div class="box">item</div>
+            </aside> -->
         </div>
         <!-- fin de main mid-->
     </main>

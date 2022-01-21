@@ -46,14 +46,13 @@ $colores: (
     .box-#{$color} {
         background-color:$bg;
         box-shadow: 5px 5px 5px #000;
-border-radius: 25px;
+        border-radius: 25px;
     }
 }
 
 .main__top {
     border: 2px solid rgba(41, 41, 41, 0.5);
     padding: 20px;
-    margin: 15px;
     box-shadow: 5px 5px 5px rgb(41, 41, 41);
     background-color: #bee2f6;
     border-radius: 15px;
@@ -63,10 +62,11 @@ border-radius: 25px;
     font-family: 'Cinzel', serif;
     color: #004d6e;
     text-shadow: 1px 7px 7px #000;
+    font-size: 30px;
 }
 
 .main__section {
-    line-height: 45px;
+    line-height: 30px;
     p { 
         color: white;
         text-shadow: 5px 5px 5px #000;
@@ -75,7 +75,7 @@ border-radius: 25px;
 }
 
 .main__section2 {
-    line-height: 35px;
+    line-height: 30px;
     p {
         color: white;
         font-family: 'Spartan', sans-serif;
@@ -100,13 +100,12 @@ border-radius: 25px;
     box-shadow: 5px 5px 5px #000;
 }
 
-@mixin sizes($padding, $margin, $bgcolor) {
+@mixin sizes($padding, $bgcolor) {
     padding: $padding;
-    margin: $margin;
     background-color: $bgcolor;
 }
 .main__mid {
-    @include sizes(15px, 15px, #bee2f6)
+    @include sizes(20px, #bee2f6)
 }
 
 .main__mid__title {
@@ -117,71 +116,87 @@ border-radius: 25px;
     text-shadow: 1px 7px 7px #000;
 }
 
-.main__mid--text{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:end;
-}
-
 .main__mid--font {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    width: 100%;
     border-radius: 10px;
-    text-align: center;
     color: white;
+    margin-top: 280px;
 }
+
+
+
 
 .sizeimg{
     border-radius: 10px;
-    height: 150px;
+    width: auto;
+    height: 300px;
     font-family: 'Spartan', sans-serif;
     background-size: cover;
     background-position: center;
     box-shadow: 5px 5px 5px #000;
+    padding: 0 0 0 0;
+    text-align: center;
+    // display: flex;
+    // flex-wrap: wrap;
+
+
 }
 
 .hotel1 {
-    background-image: url(../Img/hotelBrasil.jpg);
+    background-image: url(../img/hotelBrasil.jpg);
     @extend .sizeimg;
 }
 
 .hotel2 {
-    background-image: url(../Img/hotelBuenosAires.jpg);
+    background-image: url(../img/hotelBuenosAires.jpg);
     @extend .sizeimg;
 }
 
+@media only screen and (min-width:576px) and (max-width:661px) {
+    .hotel2Texto {
+        margin-top: 260px;
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .hotel2Texto {
+        margin-top: 255px;
+    }
+}
+
 .hotel3 {
-    background-image: url(../Img/hotelCancun.jpg);
+    background-image: url(../img/hotelCancun.jpg);
     @extend .sizeimg;    
 }
 
 .hotel4 {
-    background-image: url(../Img/hotelParis.jpg);
+    background-image: url(../img/hotelParis.jpg);
     @extend .sizeimg;
 }
 
 .hotel5 {
-    background-image: url(../Img/hotelMadrid.jpg);
+    background-image: url(../img/hotelMadrid.jpg);
     @extend .sizeimg;
 }
 
 .hotel6 {
-    background-image: url(../Img/hotelAmsterdam.jpg);
+    background-image: url(../img/hotelAmsterdam.jpg);
     @extend .sizeimg;
 }
 
 .hotel7 {
-    background-image: url(../Img/hotelLondres.jpg);
+    background-image: url(../img/hotelLondres.jpg);
     @extend .sizeimg;
 }
 
 .hotel8 {
-    background-image: url(../Img/hotelToronto.jpg);
+    background-image: url(../img/hotelToronto.jpg);
     @extend .sizeimg;
 }
 
 .hotel9 {
-    background-image: url(../Img/hotelBerlin.jpg);
+    background-image: url(../img/hotelBerlin.jpg);
     @extend .sizeimg;
 }
 
