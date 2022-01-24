@@ -183,44 +183,26 @@ header {
 /* inicio de main mid2 */
 .main__mid2 {
   background-color: #bee2f6;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "article article article2" "article article article2";
-  grid-gap: 15px;
-  margin: 15px;
   border-radius: 10px;
-  height: 700px;
   box-shadow: 5px 5px 5px #000;
 }
 
 .main__mid2__article {
   background-color: #7ec5ec;
-  grid-area: article;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 5fr 5fr;
-  grid-template-areas: "titleimg titleimg titleimg" "img1 img1 img2" "img3 img4 img4";
-  grid-gap: 15px;
   border-radius: 15px;
-  padding: 15px;
   box-shadow: 5px 5px 5px #000;
 }
 
 .main__mid2__article--title {
-  grid-area: titleimg;
-  font-size: 35px;
-  text-align: center;
   color: #004d6e;
   font-family: "Cinzel", serif;
   text-shadow: 1px 7px 7px #000;
 }
 
-.main__mid2__article__img1 {
+.main__mid2__article__img {
   background-image: url(../img/food1.jpg);
   background-position: center;
   background-size: cover;
-  grid-area: img1;
   border-radius: 15px;
   box-shadow: 10px 10px 10px #000;
 }
@@ -229,7 +211,6 @@ header {
   background-image: url(../img/food2.jpg);
   background-position: center;
   background-size: cover;
-  grid-area: img2;
   border-radius: 15px;
   box-shadow: 10px 10px 10px #000;
 }
@@ -238,7 +219,6 @@ header {
   background-image: url(../img/food3.jpg);
   background-position: center;
   background-size: cover;
-  grid-area: img3;
   border-radius: 15px;
   box-shadow: 10px 10px 10px #000;
 }
@@ -247,39 +227,25 @@ header {
   background-image: url(../img/food4.jpg);
   background-position: center;
   background-size: cover;
-  grid-area: img4;
   border-radius: 15px;
   box-shadow: 10px 10px 10px #000;
 }
 
 .main__mid2__article2 {
   background-color: #7ec5ec;
-  grid-area: article2;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 15px;
   box-shadow: 5px 5px 5px #000;
 }
 
 .main___mid2__article2--title {
   font-family: "Cinzel", serif;
-  font-size: 35px;
-  width: 100%;
-  text-align: center;
   text-shadow: 1px 7px 7px #000;
   color: #004d6e;
 }
 
 .main___mid2___article2__ul {
   background-color: #4686ab;
-  font-size: 20px;
   list-style-type: circle;
-  width: 100%;
-  text-align: start;
-  padding: 25px;
   font-family: "Spartan", sans-serif;
   border-radius: 15px;
   box-shadow: 5px 5px 5px #000;
@@ -287,18 +253,15 @@ header {
 }
 
 .subList {
-  margin-left: 20%;
   list-style-type: upper-roman;
 }
 
 .main__mid2__article2 p {
   background-color: #004d6e;
-  font-size: 16px;
   font-family: "Spartan", sans-serif;
   color: white;
   box-shadow: 5px 5px 5px #000;
   border-radius: 15px;
-  padding: 15px;
 }
 
 /* fin de main mid2 */
