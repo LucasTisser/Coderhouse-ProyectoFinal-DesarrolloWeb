@@ -1,32 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
 body {
     background-image: linear-gradient(to bottom, #00a7ff, #00a2e8, #009bd0, #0093b7, #008a9f);
 }
 
+
 /* inicio header */
-
-#img-logo {
-    margin-left: 35%;
-    height: 40px;
-}
-
-nav {
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0.0));
-}
-
 header {
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 90vh;
-}
 
-.tittle {
-    margin-top: 10%;
-    text-shadow: 0 0 5px #333;
+    nav {
+        background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0.0));
+
+        #img-logo {
+            margin-left: 35%;
+            height: 40px;
+        }
+    }
+
+    .tittle {
+        margin-top: 10%;
+        text-shadow: 0 0 5px #333;
+    }
 }
 
 .header__bottom {
@@ -35,18 +36,29 @@ header {
 
 /* fin header */
 
+
 /* inicio de main top */
-$colores: (
-    color1: #004d6e,
+$colores: (color1: #004d6e,
     color2: #4686ab,
     color3: #7ec5ec,
-    );
+);
 
-@each $color,$bg in $colores {
+@each $color,
+$bg in $colores {
     .box-#{$color} {
-        background-color:$bg;
+        background-color: $bg;
         box-shadow: 5px 5px 5px #000;
         border-radius: 25px;
+    }
+}
+
+.main__top--boxsizes {
+    line-height: 30px;
+
+    p {
+        color: white;
+        text-shadow: 5px 5px 5px #000;
+        font-family: 'Spartan', sans-serif;
     }
 }
 
@@ -56,41 +68,21 @@ $colores: (
     box-shadow: 5px 5px 5px rgb(41, 41, 41);
     background-color: #bee2f6;
     border-radius: 15px;
-}
 
-.main__title {
-    font-family: 'Cinzel', serif;
-    color: #004d6e;
-    text-shadow: 1px 7px 7px #000;
-    font-size: 30px;
-}
+    .main__title {
+        font-family: 'Cinzel', serif;
+        color: #004d6e;
+        text-shadow: 1px 7px 7px #000;
+        font-size: 30px;
+    }
 
-.main__section {
-    line-height: 30px;
-    p { 
-        color: white;
-        text-shadow: 5px 5px 5px #000;
-        font-family: 'Spartan', sans-serif;
+    .main__section,
+    .main__section2,
+    .main__section3 {
+        @extend .main__top--boxsizes;
     }
 }
 
-.main__section2 {
-    line-height: 30px;
-    p {
-        color: white;
-        font-family: 'Spartan', sans-serif;
-        text-shadow: 5px 5px 5px #000;
-    }
-}
-
-.main__section3 {
-    line-height: 30px;
-    p {
-        text-shadow: 5px 5px 5px #000;
-        color: white;
-        font-family: 'Spartan', sans-serif;
-    }
-}
 /* fin de main top */
 
 
@@ -104,241 +96,354 @@ $colores: (
     padding: $padding;
     background-color: $bgcolor;
 }
+
 .main__mid {
-    @include sizes(20px, #bee2f6)
-}
+    @include sizes(20px, #bee2f6);
 
-.main__mid__title {
-    font-size: 40px;
-    text-align: center;
-    color: #004d6e;
-    font-family: 'Cinzel', serif;
-    text-shadow: 1px 7px 7px #000;
-}
-
-.main__mid--font {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    border-radius: 10px;
-    color: white;
-    margin-top: 280px;
-}
-
-.sizeimg{
-    border-radius: 10px;
-    width: auto;
-    height: 300px;
-    font-family: 'Spartan', sans-serif;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 5px 5px 5px #000;
-    padding: 0 0 0 0;
-    text-align: center;
-}
-
-.hotel1 {
-    background-image: url(../img/hotelBrasil.jpg);
-    @extend .sizeimg;
-}
-
-.hotel2 {
-    background-image: url(../img/hotelBuenosAires.jpg);
-    @extend .sizeimg;
-}
-
-@media only screen and (min-width:576px) and (max-width:661px) {
-    .hotel2Texto {
-        margin-top: 260px;
+    .main__mid__title {
+        font-size: 40px;
+        text-align: center;
+        color: #004d6e;
+        font-family: 'Cinzel', serif;
+        text-shadow: 1px 7px 7px #000;
     }
-}
 
-
-@media only screen and (min-width:768px) and (max-width:991px) {
-    .hotel2Texto {
-        margin-top: 255px;
+    .main__mid--font {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+        border-radius: 10px;
+        color: white;
+        margin-top: 280px;
     }
-}
 
-.hotel3 {
-    background-image: url(../img/hotelCancun.jpg);
-    @extend .sizeimg;    
-}
+    .sizeimg {
+        border-radius: 10px;
+        width: auto;
+        height: 300px;
+        font-family: 'Spartan', sans-serif;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 5px 5px 5px #000;
+        padding: 0 0 0 0;
+        text-align: center;
+    }
 
-.hotel4 {
-    background-image: url(../img/hotelParis.jpg);
-    @extend .sizeimg;
-}
+    .hotel1,
+    .hotel2,
+    .hotel3,
+    .hotel4,
+    .hotel5,
+    .hotel6,
+    .hotel7,
+    .hotel8,
+    .hotel9 {
+        @extend .sizeimg;
+    }
 
-.hotel5 {
-    background-image: url(../img/hotelMadrid.jpg);
-    @extend .sizeimg;
-}
+    .hotel1 {
+        background-image: url(../img/hotelBrasil.jpg);
+    }
 
-.hotel6 {
-    background-image: url(../img/hotelAmsterdam.jpg);
-    @extend .sizeimg;
-}
+    .hotel2 {
+        background-image: url(../img/hotelBuenosAires.jpg);
+    }
 
-.hotel7 {
-    background-image: url(../img/hotelLondres.jpg);
-    @extend .sizeimg;
-}
+    .hotel3 {
+        background-image: url(../img/hotelCancun.jpg);
+    }
 
-.hotel8 {
-    background-image: url(../img/hotelToronto.jpg);
-    @extend .sizeimg;
-}
+    .hotel4 {
+        background-image: url(../img/hotelParis.jpg);
+    }
 
-.hotel9 {
-    background-image: url(../img/hotelBerlin.jpg);
-    @extend .sizeimg;
+    .hotel5 {
+        background-image: url(../img/hotelMadrid.jpg);
+    }
+
+    .hotel6 {
+        background-image: url(../img/hotelAmsterdam.jpg);
+    }
+
+    .hotel7 {
+        background-image: url(../img/hotelLondres.jpg);
+    }
+
+    .hotel8 {
+        background-image: url(../img/hotelToronto.jpg);
+    }
+
+    .hotel9 {
+        background-image: url(../img/hotelBerlin.jpg);
+    }
+
+    @media only screen and (min-width:576px) and (max-width:661px) {
+        .hotel2Texto {
+            margin-top: 260px;
+        }
+    }
+
+    @media only screen and (min-width:768px) and (max-width:991px) {
+        .hotel2Texto {
+            margin-top: 255px;
+        }
+    }
 }
 
 /* fin de main mid */
 
-/* inicio de main mid2 */
 
+/* inicio de main mid2 */
 .main__mid2 {
     background-color: #bee2f6;
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: 5px 5px 5px #000;
     padding: 20px;
-}
-.main__mid2__article {
-    background-color: #7ec5ec;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px #000;
-    height: 700px;
-}
 
-.main__mid2__article--title {
-    color: #004d6e;
-    font-family: 'Cinzel', serif;
-    text-shadow: 1px 7px 7px #000;
-}
-@media only screen and (min-width:250px) and (max-width:575px) {
     .main__mid2__article {
-        height: 450px;
+        background-color: #7ec5ec;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px #000;
+
+        .main__mid2__article--title {
+            color: #004d6e;
+            font-family: 'Cinzel', serif;
+            text-shadow: 1px 7px 7px #000;
+        }
+
+        .main_mid2_article__sizeimg {
+            background-position: center;
+            background-size: cover;
+            border-radius: 15px;
+            box-shadow: 10px 10px 10px #000;
+        }
+
+        .main__mid2__article__img,
+        .main__mid2__article__img2,
+        .main__mid2__article__img3,
+        .main__mid2__article__img4 {
+            background-position: center;
+            background-size: cover;
+        }
     }
 }
-
-@media only screen and (min-width:576px) and (max-width:767px) {
-    .main__mid2__article {
-        height: 500px;
-    }
-}
-@media only screen and (min-width:768px) and (max-width:991px) {
-    .main__mid2__article {
-        height: 550px;
-    }
-}
-@media only screen and (min-width:992px) and (max-width:1199px) {
-    .main__mid2__article {
-        height: 550px;
-    }
-}
-@media only screen and (min-width:1200px) and (max-width:1499) {
-    .main__mid2__article {
-        height: 700px;
-    }
-}
-@media only screen and (min-width:1500px){
-    .main__mid2__article {
-        height: 1000px;
-    }
-}
-
-
-.main__mid2__article__img {
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    box-shadow: 10px 10px 10px #000;
-}
-.main__mid2__article__img2 {
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    box-shadow: 10px 10px 10px #000;
-}
-.main__mid2__article__img3 {
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    box-shadow: 10px 10px 10px #000;
-}
-.main__mid2__article__img4 {
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    box-shadow: 10px 10px 10px #000;
-}
-
-
-
 
 .main__mid2__article2 {
     background-color: #7ec5ec;
-    border-radius: 15px;   
+    border-radius: 15px;
     box-shadow: 5px 5px 5px #000;
-    height: 400px;
     padding: 15px;
-    p{
+
+    .main___mid2__article2--title {
+        font-family: 'Cinzel', serif;
+        text-shadow: 1px 7px 7px #000;
+        color: #004d6e;
+        margin-bottom: 20px;
+    }
+
+    .main___mid2___article2__ul {
+        background-color: #4686ab;
+        list-style-type: none;
+        font-family: 'Spartan', sans-serif;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px #000;
+        color: white;
+    }
+
+    .tituloNegro {
+        color: #000;
+        background-color: #7ec5ec;
+        border-radius: 15px;
+    }
+
+    .subList {
+        list-style-type: upper-roman;
+        color: white;
+        background-color: #4686ab;
+    }
+
+    .main__mid2__article2--p {
+        background-color: #004d6e;
+        font-family: 'Spartan', sans-serif;
+        color: white;
+        box-shadow: 5px 5px 5px #000;
+        border-radius: 15px;
         margin: 0%;
         padding: 10px;
     }
 }
 
-@media only screen and (min-width:250px) and (max-width:575px) {
+@media only screen and (min-width:200px) and (max-width:575px) {
+    .main__mid2__article {
+        height: 450px;
+    }
+
+    .main__mid2__article__img,
+    .main__mid2__article__img2,
+    .main__mid2__article__img3,
+    .main__mid2__article__img4 {
+        height: 250px;
+    }
+
     .main__mid2__article2 {
-        height: 500px;
+        height: 600px;
     }
 }
 
 @media only screen and (min-width:576px) and (max-width:767px) {
+    .main__mid2__article {
+        height: 500px;
+    }
+
+    .main__mid2__article__img,
+    .main__mid2__article__img2,
+    .main__mid2__article__img3,
+    .main__mid2__article__img4 {
+        height: 350px;
+    }
+
     .main__mid2__article2 {
         height: 350px;
     }
 }
+
 @media only screen and (min-width:768px) and (max-width:991px) {
+    .main__mid2__article {
+        height: 500px;
+
+        .main__mid2__article--title {
+            font-size: 20px;
+        }
+    }
+
+    .main__mid2__article__img,
+    .main__mid2__article__img2,
+    .main__mid2__article__img3,
+    .main__mid2__article__img4 {
+        height: 300px;
+    }
+
     .main__mid2__article2 {
         height: 500px;
     }
 }
+
 @media only screen and (min-width:992px) and (max-width:1199px) {
-    .main__mid2__article2 {
+    .main__mid2__article {
+        height: 550px;
+    }
+
+    .main__mid2__article__img,
+    .main__mid2__article__img2,
+    .main__mid2__article__img3,
+    .main__mid2__article__img4 {
         height: 350px;
     }
-}
-.main___mid2__article2--title {
-    font-family: 'Cinzel', serif;
-    text-shadow: 1px 7px 7px #000;
-    color: #004d6e;
-    margin-bottom: 20px;
-}
-.main___mid2___article2__ul {
-    background-color: #4686ab;
-    list-style-type: none;
-    font-family: 'Spartan', sans-serif;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px #000;
-    color:white;
+
+    .main__mid2__article2 {
+        height: 550px;
+    }
 }
 
-.tituloNegro {
-    color:#000;
-    background-color: #7ec5ec;
-    border-radius: 15px;
+@media only screen and (min-width:1200px) and (max-width:1499) {
+    .main__mid2__article {
+        height: 700px;
+    }
+
+    .main__mid2__article__img,
+    .main__mid2__article__img2,
+    .main__mid2__article__img3,
+    .main__mid2__article__img4 {
+        height: 470px;
+    }
 }
-.subList {
-    list-style-type:upper-roman;
-    color: white;
-    background-color: #4686ab;
+
+@media only screen and (min-width:1500px) {
+
+    .main__mid2__article__img,
+    .main__mid2__article__img2,
+    .main__mid2__article__img3,
+    .main__mid2__article__img4 {
+        height: 500px;
+    }
 }
-.main__mid2__article2 p {
-    background-color: #004d6e;
-    font-family: 'Spartan', sans-serif;
-    color: white;
-    box-shadow: 5px 5px 5px #000;
-    border-radius: 15px;
-}
+
 /* fin de main mid2 */
+
+
+/* inicio de main bottom */
+.main__bottom {
+    background-color: #bee2f6;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #000;
+
+    .main__bottom__section {
+        background-color: #7ec5ec;
+        box-shadow: 5px 5px 5px #000;
+        border-radius: 15px;
+        text-align: center;
+
+        .main__bottom__section--title {
+            font-family: 'Cinzel', serif;
+            color: #004d6e;
+            text-shadow: 5px 5px 5px #333;
+        }
+    }
+
+    .main__bottom__section2 {
+        background-color: #7ec5ec;
+        font-family: 'Spartan', sans-serif;
+        box-shadow: 5px 5px 5px #000;
+        border-radius: 15px;
+
+        .main__bottom__section2--title {
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            color: #004d6e;
+            text-shadow: 5px 5px 5px #333;
+        }
+
+        .main__bottom__section2--p {
+            background-color: #4686ab;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px #333;
+            color: white;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width:200px) and (max-width:575px) {
+    .video {
+        height: 200px
+    }
+}
+
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .video {
+        height:400px;
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .video {
+        height: 400px;
+    }
+}
+
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+
+}
+
+
+@media only screen and (min-width:1200px) and (max-width:1499) {
+
+}
+
+
+@media only screen and (min-width:1500px) {
+
+}
+/* fin de main bottom */
