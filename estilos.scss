@@ -67,7 +67,7 @@ $bg in $colores {
     padding: 20px;
     box-shadow: 5px 5px 5px rgb(41, 41, 41);
     background-color: #bee2f6;
-    border-radius: 15px;
+    border-radius: 25px;
 
     .main__title {
         font-family: 'Cinzel', serif;
@@ -84,6 +84,34 @@ $bg in $colores {
 }
 
 /* fin de main top */
+
+
+/* inicio de aside top */
+.aside__top {
+    background-color: #4686ab;
+    box-shadow: 5px 5px 5px rgb(41, 41, 41);
+    text-align: center;
+    border-radius: 25px;
+
+    .aside__top--title {
+        text-align: center;
+        font-family: 'Cinzel', serif;
+        color: white;
+        text-shadow: 5px 5px 5px #333;
+    }
+
+    .aside__top--txt {
+        font-family: 'Spartan', sans-serif;
+        color: white;
+    }
+
+    .aside__top--form {
+        font-family: 'Spartan', sans-serif;
+        color: white;
+    }
+}
+
+/* fin de aside top */
 
 
 /* inicio de main mid */
@@ -191,6 +219,114 @@ $bg in $colores {
 /* fin de main mid */
 
 
+/* Inicio de aside mid */
+.aside__mid {
+    background-color: #4686ab;
+    box-shadow: 5px 5px 5px rgb(41, 41, 41);
+    border-radius: 25px;
+    margin:0;
+    padding: 0;
+    .aside__mid--title {
+        font-family: 'Cinzel', serif;
+        color: white;
+        text-shadow: 5px 5px 5px #333;
+        text-align: center;
+    }
+}
+
+.aside__bottom {
+    box-shadow: 5px 5px 5px rgb(41, 41, 41);
+    background-color: #4686ab;
+    border-radius: 25px;
+    margin:0;
+    padding:0;
+    .aside__bottom--title {
+        font-family: 'Cinzel', serif;
+        color: white;
+        text-shadow: 5px 5px 5px #333;
+    }
+}
+
+.aside__bottom--imgtitle {
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    text-shadow: 5px 5px 5px #333;
+}
+
+.aside__bottom--imgtitle1,
+.aside__bottom--imgtitle2,
+.aside__bottom--imgtitle3,
+.aside__bottom--imgtitle4,
+.aside__bottom--imgtitle5,
+.aside__bottom--imgtitle6,
+.aside__bottom--imgtitle7,
+.aside__bottom--imgtitle8,
+.aside__bottom--imgtitle9,
+.aside__bottom--imgtitle10 {
+    @extend .aside__bottom--imgtitle;
+}
+
+.aside__bottomimg {
+    background-color: #7ec5ec;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    border-radius: 30%;
+    box-shadow: 5px 5px 5px rgb(41, 41, 41);
+}
+
+.aside__bottom1 {
+    background-image: url(../img/desayuno.png);
+    @extend .aside__bottomimg;
+}
+
+.aside__bottom2 {
+    background-image: url(../img/cena.png);
+    @extend .aside__bottomimg;
+}
+
+.aside__bottom3 {
+    background-image: url(../img/limpieza.png);
+    @extend .aside__bottomimg;
+}
+
+.aside__bottom4 {
+    background-image: url(../img/lavanderia.png);
+    @extend .aside__bottomimg;
+}
+
+.aside__bottom5 {
+    background-image: url(../img/microondas.png);
+    @extend .aside__bottomimg;
+}
+
+.aside__bottom6 {
+    background-image: url(../img/tv.png);
+    @extend .aside__bottomimg;
+}
+
+.aside__bottom7 {
+    background-image: url(../img/cajaFuerte.png);
+    @extend .aside__bottomimg;
+}
+
+.aside__bottom8 {
+    background-image: url(../img/atencion.png);
+    @extend .aside__bottomimg;
+}
+
+.aside__bottom9 {
+    background-image: url(../img/premium.png);
+    @extend .aside__bottomimg;
+}
+
+.aside__bottom10 {
+    background-image: url(../img/servCliente.png);
+    @extend .aside__bottomimg;
+}
+/* fin de aside mid */
+
+
 /* inicio de main mid2 */
 .main__mid2 {
     background-color: #bee2f6;
@@ -272,15 +408,23 @@ $bg in $colores {
 }
 
 @media only screen and (min-width:200px) and (max-width:575px) {
+    .aside__mid--map {
+        height: 250px;
+    }
+
     .main__mid2__article {
-        height: 450px;
+        height: 300px;
+
+        .main__mid2__article--title {
+            font-size: 20px;
+        }
     }
 
     .main__mid2__article__img,
     .main__mid2__article__img2,
     .main__mid2__article__img3,
     .main__mid2__article__img4 {
-        height: 250px;
+        height: 150px;
     }
 
     .main__mid2__article2 {
@@ -289,6 +433,10 @@ $bg in $colores {
 }
 
 @media only screen and (min-width:576px) and (max-width:767px) {
+    .aside__mid--map {
+        height: 300px;
+    }
+
     .main__mid2__article {
         height: 500px;
     }
@@ -306,6 +454,14 @@ $bg in $colores {
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
+    .aside__mid {
+        height: 260px;
+
+        .aside__mid--map {
+            height: auto;
+        }
+    }
+
     .main__mid2__article {
         height: 500px;
 
@@ -327,6 +483,14 @@ $bg in $colores {
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px) {
+    .aside__mid {
+        height: 350px;
+
+        .aside__mid--map {
+            height: 250px;
+        }
+    }
+
     .main__mid2__article {
         height: 550px;
     }
@@ -343,26 +507,19 @@ $bg in $colores {
     }
 }
 
-@media only screen and (min-width:1200px) and (max-width:1499) {
-    .main__mid2__article {
-        height: 700px;
-    }
+@media only screen and (min-width:1200px) {
+    .aside__mid {
+        height: 350px;
 
-    .main__mid2__article__img,
-    .main__mid2__article__img2,
-    .main__mid2__article__img3,
-    .main__mid2__article__img4 {
-        height: 470px;
+        .aside__mid--map {
+            height: 250px;
+        }
     }
 }
 
 @media only screen and (min-width:1500px) {
-
-    .main__mid2__article__img,
-    .main__mid2__article__img2,
-    .main__mid2__article__img3,
-    .main__mid2__article__img4 {
-        height: 500px;
+    .main__mid {
+        height: 1580px;
     }
 }
 
@@ -392,7 +549,7 @@ $bg in $colores {
         background-color: #7ec5ec;
         font-family: 'Spartan', sans-serif;
         box-shadow: 5px 5px 5px #000;
-        border-radius: 15px;
+        border-radius: 25px;
 
         .main__bottom__section2--title {
             text-align: center;
@@ -403,28 +560,28 @@ $bg in $colores {
 
         .main__bottom__section2--p {
             background-color: #4686ab;
-            border-radius: 15px;
+            border-radius: 25px;
             box-shadow: 5px 5px 5px #333;
             color: white;
         }
     }
 }
 
-
-
 @media only screen and (min-width:200px) and (max-width:575px) {
+    .aside__mid--map {
+        height: 250px;
+    }
+
     .video {
         height: 200px
     }
 }
 
-
 @media only screen and (min-width:576px) and (max-width:767px) {
     .video {
-        height:400px;
+        height: 400px;
     }
 }
-
 
 @media only screen and (min-width:768px) and (max-width:991px) {
     .video {
@@ -432,18 +589,10 @@ $bg in $colores {
     }
 }
 
-
 @media only screen and (min-width:992px) and (max-width:1199px) {
-
+    .video {
+        height: 400px;
+    }
 }
 
-
-@media only screen and (min-width:1200px) and (max-width:1499) {
-
-}
-
-
-@media only screen and (min-width:1500px) {
-
-}
-/* fin de main bottom */
+/* fin de maiottom */
