@@ -224,8 +224,6 @@ $bg in $colores {
     background-color: #4686ab;
     box-shadow: 5px 5px 5px rgb(41, 41, 41);
     border-radius: 25px;
-    margin:0;
-    padding: 0;
     .aside__mid--title {
         font-family: 'Cinzel', serif;
         color: white;
@@ -238,8 +236,6 @@ $bg in $colores {
     box-shadow: 5px 5px 5px rgb(41, 41, 41);
     background-color: #4686ab;
     border-radius: 25px;
-    margin:0;
-    padding:0;
     .aside__bottom--title {
         font-family: 'Cinzel', serif;
         color: white;
@@ -270,7 +266,7 @@ $bg in $colores {
     background-color: #7ec5ec;
     background-position: center;
     background-size: cover;
-    height: 150px;
+    height:150px;
     border-radius: 30%;
     box-shadow: 5px 5px 5px rgb(41, 41, 41);
 }
@@ -555,19 +551,20 @@ $bg in $colores {
             text-align: center;
             font-family: 'Cinzel', serif;
             color: #004d6e;
-            text-shadow: 5px 5px 5px #333;
         }
 
         .main__bottom__section2--p {
-            background-color: #4686ab;
             border-radius: 25px;
-            box-shadow: 5px 5px 5px #333;
-            color: white;
+            color: #004d6e;
         }
     }
 }
 
 @media only screen and (min-width:200px) and (max-width:575px) {
+    .aside__bottom--imgtitle1, .aside__bottom--imgtitle2, .aside__bottom--imgtitle3, .aside__bottom--imgtitle4, .aside__bottom--imgtitle5, .aside__bottom--imgtitle6, .aside__bottom--imgtitle7, .aside__bottom--imgtitle8, .aside__bottom--imgtitle9 , .aside__bottom--imgtitle10 {
+        font-size: 16px;
+    }
+
     .aside__mid--map {
         height: 250px;
     }
