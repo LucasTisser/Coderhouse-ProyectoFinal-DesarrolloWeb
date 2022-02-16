@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
 
+
+html {
+    width: auto;
+    height: auto;
+}
+
 body {
     background-image: linear-gradient(to bottom, #00a7ff, #00a2e8, #009bd0, #0093b7, #008a9f);
 }
@@ -72,7 +78,6 @@ $bg in $colores {
     .main__title {
         font-family: 'Cinzel', serif;
         color: #004d6e;
-        text-shadow: 1px 7px 7px #000;
         font-size: 30px;
     }
 
@@ -224,6 +229,7 @@ $bg in $colores {
     background-color: #4686ab;
     box-shadow: 5px 5px 5px rgb(41, 41, 41);
     border-radius: 25px;
+
     .aside__mid--title {
         font-family: 'Cinzel', serif;
         color: white;
@@ -236,6 +242,7 @@ $bg in $colores {
     box-shadow: 5px 5px 5px rgb(41, 41, 41);
     background-color: #4686ab;
     border-radius: 25px;
+
     .aside__bottom--title {
         font-family: 'Cinzel', serif;
         color: white;
@@ -266,7 +273,7 @@ $bg in $colores {
     background-color: #7ec5ec;
     background-position: center;
     background-size: cover;
-    height:150px;
+    height: 150px;
     border-radius: 30%;
     box-shadow: 5px 5px 5px rgb(41, 41, 41);
 }
@@ -320,6 +327,7 @@ $bg in $colores {
     background-image: url(../img/servCliente.png);
     @extend .aside__bottomimg;
 }
+
 /* fin de aside mid */
 
 
@@ -359,9 +367,7 @@ $bg in $colores {
 }
 
 .main__mid2__article2 {
-    background-color: #7ec5ec;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px #000;
     padding: 15px;
 
     .main___mid2__article2--title {
@@ -400,122 +406,6 @@ $bg in $colores {
         border-radius: 15px;
         margin: 0%;
         padding: 10px;
-    }
-}
-
-@media only screen and (min-width:200px) and (max-width:575px) {
-    .aside__mid--map {
-        height: 250px;
-    }
-
-    .main__mid2__article {
-        height: 300px;
-
-        .main__mid2__article--title {
-            font-size: 20px;
-        }
-    }
-
-    .main__mid2__article__img,
-    .main__mid2__article__img2,
-    .main__mid2__article__img3,
-    .main__mid2__article__img4 {
-        height: 150px;
-    }
-
-    .main__mid2__article2 {
-        height: 600px;
-    }
-}
-
-@media only screen and (min-width:576px) and (max-width:767px) {
-    .aside__mid--map {
-        height: 300px;
-    }
-
-    .main__mid2__article {
-        height: 500px;
-    }
-
-    .main__mid2__article__img,
-    .main__mid2__article__img2,
-    .main__mid2__article__img3,
-    .main__mid2__article__img4 {
-        height: 350px;
-    }
-
-    .main__mid2__article2 {
-        height: 350px;
-    }
-}
-
-@media only screen and (min-width:768px) and (max-width:991px) {
-    .aside__mid {
-        height: 260px;
-
-        .aside__mid--map {
-            height: auto;
-        }
-    }
-
-    .main__mid2__article {
-        height: 500px;
-
-        .main__mid2__article--title {
-            font-size: 20px;
-        }
-    }
-
-    .main__mid2__article__img,
-    .main__mid2__article__img2,
-    .main__mid2__article__img3,
-    .main__mid2__article__img4 {
-        height: 300px;
-    }
-
-    .main__mid2__article2 {
-        height: 500px;
-    }
-}
-
-@media only screen and (min-width:992px) and (max-width:1199px) {
-    .aside__mid {
-        height: 350px;
-
-        .aside__mid--map {
-            height: 250px;
-        }
-    }
-
-    .main__mid2__article {
-        height: 550px;
-    }
-
-    .main__mid2__article__img,
-    .main__mid2__article__img2,
-    .main__mid2__article__img3,
-    .main__mid2__article__img4 {
-        height: 350px;
-    }
-
-    .main__mid2__article2 {
-        height: 550px;
-    }
-}
-
-@media only screen and (min-width:1200px) {
-    .aside__mid {
-        height: 350px;
-
-        .aside__mid--map {
-            height: 250px;
-        }
-    }
-}
-
-@media only screen and (min-width:1500px) {
-    .main__mid {
-        height: 1580px;
     }
 }
 
@@ -560,8 +450,115 @@ $bg in $colores {
     }
 }
 
+/* inicio de pieDePagina */
+
+.footer {
+    background-color: #004d6e;
+    height: auto;
+    width: auto;
+    margin: 0%;
+    padding: 0%;
+}
+
+.footer__content__soport {
+    background-color: #7ec5ec;
+    border-radius: 15px;
+}
+
+.footer__content__soport--title {
+    font-family: 'Cinzel', serif;
+    color: #004d6e;
+    text-shadow: 5px 5px 5px #333;
+}
+
+.footer__content__soport--list {
+    font-family: 'Spartan', sans-serif;
+    color: #004d6e;
+    list-style: none;
+    padding: 5px;
+}
+
+.noLine {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer__content__logos {
+    background-color: #7ec5ec;
+    color: white;
+    border-radius: 15px;
+}
+
+.footer__content__logos--title {
+    font-family: 'Cinzel', serif;
+    color: #004d6e;
+    text-shadow: 5px 5px 5px #333;
+}
+
+.footer__content__logos--sizeInstagram {
+    width: 47px;
+    height: 47px;
+}
+
+.footer__content__logos--sizeFacebook {
+    width: 47px;
+    height: 47px;
+}
+
+.footer__content__logos--sizeAmerican {
+    width: 47px;
+    height: 47px;
+}
+
+.footer__content__logos--sizeTwitter {
+    width: 47px;
+    height: 47px;
+}
+
+.footer__content__logos--sizeVisa {
+    width: 47px;
+    height: 47px;
+}
+
+/* fin de pagina index */
+
+
+
 @media only screen and (min-width:200px) and (max-width:575px) {
-    .aside__bottom--imgtitle1, .aside__bottom--imgtitle2, .aside__bottom--imgtitle3, .aside__bottom--imgtitle4, .aside__bottom--imgtitle5, .aside__bottom--imgtitle6, .aside__bottom--imgtitle7, .aside__bottom--imgtitle8, .aside__bottom--imgtitle9 , .aside__bottom--imgtitle10 {
+    .aside__mid--map {
+        height: 250px;
+    }
+
+    .main__mid2__article {
+        height: 300px;
+
+        .main__mid2__article--title {
+            font-size: 20px;
+        }
+    }
+
+    .main__mid2__article__img,
+    .main__mid2__article__img2,
+    .main__mid2__article__img3,
+    .main__mid2__article__img4 {
+        height: 150px;
+    }
+
+    .main__mid2__article2 {
+        height: 600px;
+    }
+
+    .aside__bottom--imgtitle1,
+    .aside__bottom--imgtitle2,
+    .aside__bottom--imgtitle3,
+    .aside__bottom--imgtitle4,
+    .aside__bottom--imgtitle5,
+    .aside__bottom--imgtitle6,
+    .aside__bottom--imgtitle7,
+    .aside__bottom--imgtitle8,
+    .aside__bottom--imgtitle9,
+    .aside__bottom--imgtitle10 {
         font-size: 16px;
     }
 
@@ -572,24 +569,207 @@ $bg in $colores {
     .video {
         height: 200px
     }
+
+    .footer__content__logos--title {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width:576px) and (max-width:767px) {
+    .aside__mid--map {
+        height: 300px;
+    }
+
+    .main__mid2__article {
+        height: 500px;
+    }
+
+    .main__mid2__article__img,
+    .main__mid2__article__img2,
+    .main__mid2__article__img3,
+    .main__mid2__article__img4 {
+        height: 350px;
+    }
+
+    .main__mid2__article2 {
+        height: 350px;
+    }
+
     .video {
         height: 400px;
     }
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
+    .aside__mid {
+        height: 260px;
+
+        .aside__mid--map {
+            height: auto;
+        }
+    }
+
+    .aside__bottom1,
+    .aside__bottom2,
+    .aside__bottom3,
+    .aside__bottom4,
+    .aside__bottom5,
+    .aside__bottom6,
+    .aside__bottom7,
+    .aside__bottom8,
+    .aside__bottom9,
+    .aside__bottom10 {
+        height: 100px;
+    }
+
+    .aside__bottom--imgtitle1,
+    .aside__bottom--imgtitle2,
+    .aside__bottom--imgtitle3,
+    .aside__bottom--imgtitle4,
+    .aside__bottom--imgtitle5,
+    .aside__bottom--imgtitle6,
+    .aside__bottom--imgtitle7,
+    .aside__bottom--imgtitle8,
+    .aside__bottom--imgtitle9,
+    .aside__bottom--imgtitle10 {
+        font-size: 16px;
+    }
+
+    .main__mid2__article {
+        height: 500px;
+
+        .main__mid2__article--title {
+            font-size: 20px;
+        }
+    }
+
+    .main__mid2__article__img,
+    .main__mid2__article__img2,
+    .main__mid2__article__img3,
+    .main__mid2__article__img4 {
+        height: 300px;
+    }
+
+    .main__mid2__article2 {
+        height: 500px;
+    }
+
     .video {
         height: 400px;
     }
+
+    .footer__content {
+        display: flex;
+        justify-content: space-around;
+    }
 }
+
 
 @media only screen and (min-width:992px) and (max-width:1199px) {
+    .aside__mid {
+        height: 350px;
+
+        .aside__mid--map {
+            height: 250px;
+        }
+    }
+
+    .aside__bottom1,
+    .aside__bottom2,
+    .aside__bottom3,
+    .aside__bottom4,
+    .aside__bottom5,
+    .aside__bottom6,
+    .aside__bottom7,
+    .aside__bottom8,
+    .aside__bottom9,
+    .aside__bottom10 {
+        height: 100px;
+    }
+
+    .aside__bottom--imgtitle1,
+    .aside__bottom--imgtitle2,
+    .aside__bottom--imgtitle3,
+    .aside__bottom--imgtitle4,
+    .aside__bottom--imgtitle5,
+    .aside__bottom--imgtitle6,
+    .aside__bottom--imgtitle7,
+    .aside__bottom--imgtitle8,
+    .aside__bottom--imgtitle9,
+    .aside__bottom--imgtitle10 {
+        font-size: 16px;
+    }
+
+    .main__mid2__article {
+        height: 550px;
+    }
+
+    .main__mid2__article__img,
+    .main__mid2__article__img2,
+    .main__mid2__article__img3,
+    .main__mid2__article__img4 {
+        height: 350px;
+    }
+
+    .main__mid2__article2 {
+        height: 550px;
+    }
+
     .video {
         height: 400px;
     }
+
+    .footer__content {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
-/* fin de maiottom */
+@media only screen and (min-width:1200px) {
+    .aside__mid {
+        height: 350px;
+
+        .aside__mid--map {
+            height: 250px;
+        }
+    }
+
+    .aside__bottom1,
+    .aside__bottom2,
+    .aside__bottom3,
+    .aside__bottom4,
+    .aside__bottom5,
+    .aside__bottom6,
+    .aside__bottom7,
+    .aside__bottom8,
+    .aside__bottom9,
+    .aside__bottom10 {
+        height: 100px;
+    }
+
+    .aside__bottom--imgtitle1,
+    .aside__bottom--imgtitle2,
+    .aside__bottom--imgtitle3,
+    .aside__bottom--imgtitle4,
+    .aside__bottom--imgtitle5,
+    .aside__bottom--imgtitle6,
+    .aside__bottom--imgtitle7,
+    .aside__bottom--imgtitle8,
+    .aside__bottom--imgtitle9,
+    .aside__bottom--imgtitle10 {
+        font-size: 16px;
+    }
+
+    .footer__content {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width:1500px) {
+    .main__mid {
+        height: 1580px;
+    }
+}
+
+/* fin de main bottom */
